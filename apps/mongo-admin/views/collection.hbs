@@ -1,0 +1,17 @@
+<h1>Mongo Admin</h1><br />
+
+<h3>
+	<a href="/collections">collections</a> > 
+	{{collection}}
+</h3><br />
+
+<a class="btn btn-primary" href="/collections/{{collection}}/new">New Document</a>
+<br />
+<br />
+<div class="well">
+<ul>
+{{#each items}}
+    <li><a href="/collections/{{collection}}/{{_id}}">{{_id}}</a></li>
+{{/each}}
+</ul>
+</div>

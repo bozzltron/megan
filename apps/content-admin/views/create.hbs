@@ -1,0 +1,19 @@
+<h1>Create Content</h1><br />
+
+{{#each errors}}
+    <div class="alert alert-error">{{this}}</div>
+{{/each}}
+
+<form action="/content/create" method="post">
+	<input type="text" name="type" placeholder="Type (blog, page, etc...)"/>
+	<br />
+	<input type="text" name="title" placeholder="Title"/>
+	<br />
+	<textarea rows="10" cols="100" name="body" placeholder="Body"></textarea>
+	<br />
+	<input type="text" name="path" placeholder="Path (Create a url to view your page)"/>
+	<br />	
+	<input type="text" name="tags" placeholder="Tags (tag your content with different comma seperated labels)"/>
+	<br />	
+	<input type="submit" class="btn" value="Save"/>
+</form>

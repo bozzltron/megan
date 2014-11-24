@@ -1,0 +1,18 @@
+<h1>Mongo Admin</h1><br />
+
+<h3>
+	collections
+</h3><br />
+{{success}}
+{{error}}
+
+<div class="well">
+	<ul class="nav nav-list">
+	  <li class="nav-header">
+	    Collections
+	  </li>
+		{{#each items}}
+		    <li><a href="/collections/{{collectionName}}">{{collectionName}}</a></li>
+		{{/each}}
+	</ul>
+</div>

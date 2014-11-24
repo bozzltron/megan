@@ -1,0 +1,20 @@
+
+.donis-logo {
+    background-color:#fff;
+    width:69px;
+    height:69px;
+    border-radius:35px;
+    -moz-border-radius:35px;
+    display:inline-block;
+    overflow:hidden;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.donis-logo img {
+	margin: auto;
+	height: 100%;
+	position: relative;
+	left:10px;
+}

@@ -1,0 +1,12 @@
+<h1>Content</h1><br />
+
+<a class="btn btn-primary" href="/content/create">Create Content</a>
+<br />
+<br />
+<div class="well">
+<ul>
+{{#each items}}
+    <li>{{title}} <a href="{{path}}">view</a> | <a href="/content/{{_id}}">edit</a></li>
+{{/each}}
+</ul>
+</div>

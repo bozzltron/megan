@@ -1,0 +1,15 @@
+<h1>Create Content</h1><br />
+
+<form action="/content/update/{{document._id}}" method="post">
+	<input type="text" name="type" placeholder="Type (blog, page, etc...)" value="{{document.type}}"/>
+	<br />
+	<input type="text" name="title" value="{{document.title}}"/>
+	<br />
+	<textarea rows="10" cols="100" name="body">{{document.body}}</textarea>
+	<br />
+	<input type="text" name="path" value="{{document.path}}"/>
+	<br />	
+	<input type="text" name="tags" placeholder="Tags (tag your content with different comma seperated labels)" value="{{document.tags}}"/>
+	<br />	
+	<input type="submit" class="btn" value="Save"/>
+</form>

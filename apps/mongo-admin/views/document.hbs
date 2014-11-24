@@ -1,0 +1,15 @@
+<h1>Mongo Admin</h1><br />
+
+<h3>
+	<a href="/collections">collections</a> > 
+	<a href="/collections/{{collection}}">{{collection}}</a> > 
+	{{_id}}
+</h3><br />
+
+<form action="/collections/{{collection}}/{{_id}}">
+	<textarea rows="10" cols="100">
+	{{{document}}}
+	</textarea>
+	<br />
+	<input type="submit" class="btn" value="Submit"/>
+</form>
